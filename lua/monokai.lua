@@ -6,7 +6,7 @@ M.classic = {
   name = 'monokai',
   base0 = '#222426',
   base1 = '#272a30',
-  base2 = '#26292C',
+  base2 = '#161612',
   base3 = '#2E323C',
   base4 = '#333842',
   base5 = '#4d5154',
@@ -325,11 +325,10 @@ M.load_syntax = function(palette)
       fg = palette.aqua,
     },
     Identifier = {
-      fg = palette.white,
+      fg = palette.orange,
     },
     Function = {
       fg = palette.green,
-      style = 'italic',
     },
     Statement = {
       fg = palette.pink,
@@ -361,7 +360,8 @@ M.load_syntax = function(palette)
       fg = palette.pink,
     },
     Special = {
-      fg = palette.white,
+      fg = palette.aqua,
+      style = 'italic',
     },
     SpecialChar = {
       fg = palette.pink,
