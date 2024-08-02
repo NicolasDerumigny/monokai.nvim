@@ -295,7 +295,7 @@ M.load_syntax = function(palette)
       bg = palette.black,
     },
     Constant = {
-      fg = palette.aqua,
+      fg = palette.purple,
     },
     Number = {
       fg = palette.purple,
@@ -319,7 +319,7 @@ M.load_syntax = function(palette)
       fg = palette.aqua,
     },
     StorageClass = {
-      fg = palette.aqua,
+      fg = palette.orange,
     },
     Typedef = {
       fg = palette.aqua,
