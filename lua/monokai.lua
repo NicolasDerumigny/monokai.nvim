@@ -7,10 +7,10 @@ M.classic = {
   base0 = '#222426',
   base1 = '#272a30',
   base2 = '#161612',
-  base3 = '#2E323C',
+  base3 = '#64645e',
   base4 = '#333842',
   base5 = '#4d5154',
-  base6 = '#9ca0a4',
+  base6 = '#75715e',
   base7 = '#b1b1b1',
   base8 = '#e3e3e1',
   border = '#a1b5b1',
@@ -36,7 +36,7 @@ M.pro = {
   base0 = '#222426',
   base1 = '#211F22',
   base2 = '#26292C',
-  base3 = '#2E323C',
+  base3 = '#64645e',
   base4 = '#333842',
   base5 = '#4d5154',
   base6 = '#72696A',
@@ -65,7 +65,7 @@ M.soda = {
   base0 = '#222426',
   base1 = '#211F22',
   base2 = '#26292C',
-  base3 = '#2E323C',
+  base3 = '#64645e',
   base4 = '#333842',
   base5 = '#4d5154',
   base6 = '#72696A',
@@ -230,11 +230,12 @@ M.load_syntax = function(palette)
       bg = palette.base2,
     },
     StatusLine = {
-      fg = palette.base7,
+      style = 'bold',
+      fg = palette.white,
       bg = palette.base3,
     },
     StatusLineNC = {
-      fg = palette.grey,
+      fg = palette.white,
       bg = palette.base3,
     },
     Tabline = {},
@@ -867,6 +868,10 @@ M.load_plugin_syntax = function(palette)
 
     -- ray-x/lsp_signature.nvim
     LspSignatureActiveParameter = { fg = palette.orange },
+
+    GitGutterAdd = { fg = palette.green },
+    GitGutterDelete = { fg = palette.red },
+    GitGutterChange = { fg = palette.yellow },
   }
 end
 
